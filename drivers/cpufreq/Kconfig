@@ -389,6 +389,7 @@ config CPU_FREQ_GOV_INTELLIACTIVE
 
 	  If in doubt, say N.
 
+<<<<<<< HEAD
 config CPU_FREQ_GOV_ONDEMANDPLUS
 	tristate "'ondemandplus' cpufreq policy governor"
 	depends on CPU_FREQ
@@ -425,6 +426,16 @@ config CPU_FREQ_GOV_DARKNESS
 config CPU_FREQ_GOV_ALUCARD
 	tristate "'alucard' cpufreq governor"
 	depends on CPU_FREQ
+=======
+config CPUFREQ_HARDLIMIT
+	bool "CPU Frequency max. hardlimit"
+	default y
+	depends on CPU_FREQ
+	help
+	  Enforce a CPU hardlimit on mpdecision by refusing writes to sysfs
+	  above the given cutoff frequency and returning this cutoff frequency
+	  as get_max_freq(). (Yank555.lu)
+>>>>>>> 59c757f... cpufreq: CPU max. hardlimit v1.5 (Yank555.lu)
 
 menu "x86 CPU frequency scaling drivers"
 depends on X86
