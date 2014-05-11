@@ -209,7 +209,10 @@ static int boost_mig_sync_thread(void *data)
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 59c757f... cpufreq: CPU max. hardlimit v1.5 (Yank555.lu)
 #ifdef CONFIG_CPUFREQ_HARDLIMIT
 		if (sync_threshold && (dest_policy.cur >= check_cpufreq_hardlimit(sync_threshold))) /* Yank555.lu - Enforce hardlimit */
 #else

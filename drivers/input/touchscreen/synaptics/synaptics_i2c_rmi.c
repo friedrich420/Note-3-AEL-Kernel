@@ -42,6 +42,9 @@
 #include <linux/cpufreq_hardlimit.h>
 #endif
 
+<<<<<<< HEAD
+>>>>>>> 59c757f... cpufreq: CPU max. hardlimit v1.5 (Yank555.lu)
+=======
 >>>>>>> 59c757f... cpufreq: CPU max. hardlimit v1.5 (Yank555.lu)
 #define DRIVER_NAME "synaptics_rmi4_i2c"
 #undef USE_SENSOR_SLEEP

@@ -470,14 +470,20 @@ static ssize_t store_##file_name					\
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 store_one(scaling_min_freq, min);
 =======
+=======
+>>>>>>> 59c757f... cpufreq: CPU max. hardlimit v1.5 (Yank555.lu)
 #ifndef CONFIG_CPUFREQ_HARDLIMIT
 #ifdef CONFIG_SEC_PM
 
 /* Disable scaling_min_freq store */
 store_one(scaling_min_freq, min);
 #endif
+<<<<<<< HEAD
+>>>>>>> 59c757f... cpufreq: CPU max. hardlimit v1.5 (Yank555.lu)
+=======
 >>>>>>> 59c757f... cpufreq: CPU max. hardlimit v1.5 (Yank555.lu)
 store_one(scaling_max_freq, max);
 #else
