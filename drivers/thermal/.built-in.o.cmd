@@ -1,0 +1,1 @@
+cmd_drivers/thermal/built-in.o :=  /home/friedrich420/kernel/Toolchain/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/thermal/built-in.o drivers/thermal/thermal_sys.o drivers/thermal/intelli/msm_thermal.o drivers/thermal/msm8974-tsens.o drivers/thermal/qpnp-temp-alarm.o drivers/thermal/qpnp-adc-tm.o 

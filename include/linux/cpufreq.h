@@ -451,6 +451,7 @@ extern struct cpufreq_governor cpufreq_gov_alucard;
 #define CPUFREQ_DEFAULT_GOVERNOR (&cpufreq_gov_alucard)
 #endif
 
+
 /*********************************************************************
  *                     FREQUENCY TABLE HELPERS                       *
  *********************************************************************/

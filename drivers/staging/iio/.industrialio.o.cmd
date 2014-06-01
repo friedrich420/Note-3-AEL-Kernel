@@ -1,0 +1,1 @@
+cmd_drivers/staging/iio/industrialio.o := /home/friedrich420/kernel/Toolchain/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/staging/iio/industrialio.o drivers/staging/iio/industrialio-core.o drivers/staging/iio/industrialio-event.o drivers/staging/iio/inkern.o drivers/staging/iio/industrialio-buffer.o drivers/staging/iio/industrialio-trigger.o 

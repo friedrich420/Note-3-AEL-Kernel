@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/msm/camera_v2/sensor/eeprom/built-in.o :=  /home/friedrich420/kernel/Toolchain/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/media/platform/msm/camera_v2/sensor/eeprom/built-in.o drivers/media/platform/msm/camera_v2/sensor/eeprom/msm_eeprom.o 

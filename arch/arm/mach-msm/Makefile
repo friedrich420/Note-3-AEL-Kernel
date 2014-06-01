@@ -7,6 +7,7 @@ endif
 obj-y += clock.o clock-voter.o clock-dummy.o clock-generic.o
 obj-y += modem_notifier.o
 obj-$(CONFIG_USE_OF) += board-dt.o
+obj-$(CONFIG_INTELLI_PLUG) += intelli_plug.o
 obj-$(CONFIG_DEBUG_FS) += nohlt.o clock-debug.o
 obj-$(CONFIG_KEXEC) += msm_kexec.o
 
@@ -292,6 +293,7 @@ obj-$(CONFIG_SEC_K_PROJECT) += board-8974-sec-k-gpiomux.o
 obj-$(CONFIG_SEC_LT03_PROJECT) += board-8974-sec-lt03-gpiomux.o
 obj-$(CONFIG_SEC_N2_PROJECT) += board-8974-sec-n2-gpiomux.o
 obj-$(CONFIG_SEC_H_PROJECT) += board-8974-sec-h-gpiomux.o
+obj-$(CONFIG_SEC_JS_PROJECT) += board-8974-sec-h-gpiomux.o
 obj-$(CONFIG_SEC_F_PROJECT) += board-8974-sec-f-gpiomux.o
 obj-$(CONFIG_SEC_KS01_PROJECT) += board-8974-sec-ks01-gpiomux.o
 obj-$(CONFIG_SEC_LT03_PROJECT) += board-8974-sec-lt03-gpiomux.o
@@ -489,4 +491,5 @@ obj-$(CONFIG_SEC_V2_PROJECT) += board-vienna-motor.o
 
 obj-$(CONFIG_SEC_THERMISTOR) += sec_thermistor.o msm8974-thermistor.o
 obj-$(CONFIG_GSM_MODEM_SPRD6500) += board-sprd6500-spi.o board-sprd6500-modems.o
+
 obj-$(CONFIG_FORCE_FAST_CHARGE) += fastchg.o

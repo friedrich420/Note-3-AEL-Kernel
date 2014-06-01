@@ -1,0 +1,1 @@
+cmd_drivers/input/touchscreen/built-in.o :=  /home/friedrich420/kernel/Toolchain/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/input/touchscreen/built-in.o drivers/input/touchscreen/wacom/built-in.o drivers/input/touchscreen/synaptics/built-in.o 

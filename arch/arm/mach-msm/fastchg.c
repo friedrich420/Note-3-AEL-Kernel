@@ -37,7 +37,7 @@
  *   0 - disabled - allow anything up to 2.1A/h to be used as AC / USB custom current
  *   1 - enabled  - behaviour as described above (default)
  *
- * /sys/kernel/fast_charge/ac_leves (ro)
+ * /sys/kernel/fast_charge/ac_levels (ro)
  *
  *   display available levels for AC (for failsafe enabled mode)
  *
@@ -316,5 +316,4 @@ void force_fast_charge_exit(void)
 
 module_init(force_fast_charge_init);
 module_exit(force_fast_charge_exit);
-
 

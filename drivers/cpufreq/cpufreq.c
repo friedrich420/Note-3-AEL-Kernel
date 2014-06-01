@@ -1241,6 +1241,7 @@ static int cpufreq_remove_dev(struct device *dev, struct subsys_interface *sif)
 	return retval;
 }
 
+
 static void handle_update(struct work_struct *work)
 {
 	struct cpufreq_policy *policy =
@@ -1745,8 +1746,9 @@ static int __cpufreq_set_policy(struct cpufreq_policy *data,
 	memcpy(&policy->cpuinfo, &data->cpuinfo,
 				sizeof(struct cpufreq_cpuinfo));
 
-	if (policy->min > data->user_policy.max
-		|| policy->max < data->user_policy.min) {
+	if (policy->min > data->max || policy->max < data->min) {
+		pr_debug("CPUFREQ: %s: pmin:%d, pmax:%d, min:%d, max:%d\n",
+			__func__, policy->min, policy->max, data->min, data->max);
 #ifndef CONFIG_SEC_PM
 		ret = -EINVAL;
 		goto error_out;

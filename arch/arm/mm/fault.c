@@ -378,6 +378,7 @@ int tima_is_pg_protected(unsigned long va)
 
 	return 0;
 }
+EXPORT_SYMBOL(tima_is_pg_protected);
 #endif
 
 /*
